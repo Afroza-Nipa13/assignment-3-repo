@@ -24,6 +24,7 @@
             clifford: '#da373d',
             yellow:"rgba(255, 220, 38, 1)",
             bgYellow:"rgba(249, 223, 138, 1)",
+            yellow100:"rgba()"
           }
         }
       }
@@ -104,7 +105,7 @@
         </div>
       </section>
       </header>
-    <main>
+    <main class="max-w-screen-xl mx-auto">
         <!-- Browse categories section  -->
          <section class="mb-12 mx-auto w-full text-left">
             <h2 class="text-4xl font-bold font-primary pl-10">Browse By Categories</h2>
@@ -192,44 +193,112 @@
 
          </section>
          <!-- Trending Pet Products  -->
-          <section class="mb-24 items-center space-y-12 mx-auto bg-orange-100 flex">
+          <section class="mb-24 items-center space-y-12 mx-auto bg-orange-100 flex justify-center">
             <!-- T-shirt image section  -->
-            <div class="relative lg:w-[424px]  rounded-lg bg-bgYellow px-10 py-10">
-                <h3>T-Shirts For Dogs</h3>
+            <div class="relative lg:w-[424px] lg:h-[400px]  rounded-lg bg-bgYellow px-10 py-10 flex flex-col">
+                <h3 class="font-bold font-primary text-2xl">T-Shirts For Dogs</h3>
                 <p>Discover a worlds for treats ,toys , essentials.</p>
-                <button class="rounded-lg px-10 py-2 bg-yellow text-black border-none bg-yellow-50">Shop Now</button>
-                
+                <div>
+                <button class="rounded-lg px-8 py-2 bg-white text-black border-none">Shop Now</button>
+               </div>
                     <img class="absolute top-12 right-10" src="c1-assets/cute-pet-small.png" alt="">
                 </div>
             </div>
             <!-- grid card section  -->
              <div class="">
                 <!-- card-1  -->
-                 <div class="bg-white lg:w-[275px] h-[200px] rounded-lg ">
-                    <div class="avatar ">
-                        <div class="w-16 rounded-xl bg-orange-100 p-4">
+                 <div class="bg-white rounded-lg grid grid-cols-2 lg:w-[276px] lg:h-[118px] ">
+                    <!-- image avatar  -->
+                  <div class="avatar ">
+                        <div class="w-16 rounded-xl bg-orange-100 p-2">
                           <img class="" src="c1-assets/dog-cartoon.png" alt="">
                       </div>
-                      
-                        <div class="flex flex-col ml-3">
+                     <!--card-1 text -->
+                      <div class="ml-3">
+                      <!-- icon div  -->
+                      <div class="flex">
+                        <!-- icon  -->
                         <div>
-                            <i class="fa-solid fa-star"></i>
-                            <p>4.5</p>
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_1_731)">
+                          <path d="M17.5222 6.43804L11.9887 5.59279L9.50849 0.309791C9.32324 -0.084709 8.67599 -0.084709 8.49074 0.309791L6.01124 5.59279L0.47774 6.43804C0.0232398 6.50779 -0.15826 7.06054 0.16049 7.38679L4.18049 11.5073L3.23024 17.3325C3.15449 17.7953 3.64874 18.1425 4.05749 17.9153L8.99999 15.1838L13.9425 17.916C14.3475 18.141 14.8462 17.8005 14.7697 17.3333L13.8195 11.508L17.8395 7.38754C18.1582 7.06054 17.976 6.50779 17.5222 6.43804Z" fill="#FFC107"/>
+                          </g>
+                          <defs>
+                          <clipPath id="clip0_1_731">
+                          <rect width="18" height="18" fill="white"/>
+                          </clipPath>
+                          </defs>
+                          </svg>
                         </div>
-                        <div class="pb-3">
-                            <h3>Pet Bed</h3>
-                            <p>$39.99</p>
+                        <!-- price  -->
+                        <div>
+                          <p>4.5</p>
                         </div>
+                       </div>
+                        <!-- text div  -->
+                    <div class="">
+                      <h3>Pet Bed</h3>
+                      <p>$39.99</p>
                     </div>
-                 </div>
+                    
+                </div> 
+              </div>
 
              </div>
 
 
           </section>
           <!-- Every day low price  -->
-           <section></section>
+          
+          <section class="mb-12">
+
+            <h2 class="font-bold font-primary text-4xl mb-12">Everyday Low Price</h2>
+            <div class="lg: flex gap-4">
+            <!-- image card-1 -->
+            <div class="flex px-5 py-5 rounded-lg bg-gradient-to-r from-pink-100 via-purple-200 to-indigo-200 ...">
+              <!-- content  -->
+              <div class="items-center place-content-center space-y-3 ml-10">
+                <p>Under Price</p>              
+                <h3 class="text-3xl font-primary font-bold">Pet Grooming Mitt</h3>
+                <span class="text-white text-2xl font-primary">(Easy Hair Removal)</span>
+                <h2 class="font-bold font-primary text-6xl">$7.99</h2>
+               </div>
+               <!-- image  -->
+                <div>
+                  <img class="w-full" src="c1-assets/cute-dog-mid.png" alt="">
+                </div>
+            </div>
+
+            <!-- image card-2 -->
+            <div class="flex px-5 pt-14 rounded-lg bg-gradient-to-r from-pink-50 via-yellow-100 to-orange-200 ...">
+              <!-- content  -->
+              <div class=" justify-start space-y-3 ml-10">
+                              
+                <h3 class="text-3xl font-primary font-bold">T-Shirt for Dogs</h3>
+                
+                <h2 class=" font-primary text-6xl text-yellow">$7.99</h2>
+               </div>
+               <!-- image  -->
+                <div class="relative overflow-visible lg:w-[312px] lg:h-[392px]">
+                  <img class="absolute top-20 left-0  w-full" src="c1-assets/cute-pet-mid.png" alt="">
+                </div>
+            </div>
+          </div>
+           </section>
            <!-- Get Pawsome news  -->
+            <div>
+              <!-- image -->
+               <div>
+                <img src="c1-assets/cute-pet-mid.png" alt="">
+               </div>
+               <!-- content  -->
+                <div>
+                  <h3></h3>
+                  <p></p>
+                  <input type="text">
+                  <button>Subscribe</button>
+                </div>
+            </div>
             <section></section>
 
     </main>
